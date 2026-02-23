@@ -255,7 +255,7 @@ export default function ProductForm({ onSubmit, onCancel, editingProduct, isLoad
           <button
             type="submit"
             disabled={isLoading}
-            className="flex-1 bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition font-medium"
+            className="flex-1 bg-gray-500 text-white py-2 px-4 rounded-lg hover:bg-gray-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition font-medium"
           >
             {isLoading ? 'Saving...' : editingProduct ? 'Update Product' : 'Add Product'}
           </button>
@@ -264,7 +264,7 @@ export default function ProductForm({ onSubmit, onCancel, editingProduct, isLoad
               type="button"
               onClick={handleCancel}
               disabled={isLoading}
-              className="flex-1 bg-gray-200 text-gray-700 py-2 px-4 rounded-lg hover:bg-gray-300 disabled:bg-gray-100 disabled:cursor-not-allowed transition font-medium"
+              className="flex-1 bg-gray-200 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-300 disabled:bg-gray-100 disabled:cursor-not-allowed transition font-medium"
             >
               {editingProduct ? 'Cancel' : 'Reset'}
             </button>
