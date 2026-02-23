@@ -1,4 +1,4 @@
-import { Edit2, Trash2, Loader2 } from 'lucide-react';
+import { Edit2, Trash2, Loader2, Package } from 'lucide-react';
 import { Product } from '../services/products';
 import { useState } from 'react';
 
@@ -37,7 +37,7 @@ export default function ProductTable({ products, onEdit, onDelete, isLoading }: 
     return (
       <div className="bg-white rounded-lg shadow-md p-12">
         <div className="text-center">
-          <div className="text-6xl mb-4">📦</div>
+          <div className="text-6xl mb-4"><Package className="text-gray-400 h-12 w-12" /></div>
           <h3 className="text-xl font-semibold text-gray-700 mb-2">No Products Yet</h3>
           <p className="text-gray-500">Add your first product to get started</p>
         </div>
