@@ -255,7 +255,7 @@ export default function ProductForm({ onSubmit, onCancel, editingProduct, isLoad
           <button
             type="submit"
             disabled={isLoading}
-            className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition font-medium"
+            className="flex-1 bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition font-medium"
           >
             {isLoading ? 'Saving...' : editingProduct ? 'Update Product' : 'Add Product'}
           </button>
