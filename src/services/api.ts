@@ -39,9 +39,6 @@ apiClient.interceptors.response.use(
 
       case 401:
         console.error('Unauthorized – please login');
-        // Optional:
-        // localStorage.removeItem('token');
-        // window.location.href = '/login';
         break;
 
       case 403:
